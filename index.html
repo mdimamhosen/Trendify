@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shortcut icon" href="./Images/remove-cart.png" type="image/x-icon">
+    <title>Trendify</title>
+    <meta name="description" content="Trendify offers the latest fashion trends, exclusive summer collections, and limited-time offers. Explore and shop now to stay stylish.">
+    <meta name="keywords" content="fashion, trends, summer collection, shopping, style, exclusive offers, Trendify">
+    <meta property="og:title" content="Trendify - Discover Latest Fashion Trends & Exclusive Collections">
+    <meta property="og:description" content="Explore Trendify for the latest trends, exclusive summer collections, and limited-time offers. Shop now and find your style.">
+    <meta property="og:type" content="website">
+</head>
+
+<body class="">
+    <!-- Navbar Section -->
+    <div class="bg-[#041728]  ">
+        <nav class="w-11/12 mx-auto navbar bg-[#041728] ">
+            <!-- Navbar Start -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <button tabindex="0" role="button" class="btn btn-ghost lg:hidden text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                    <span class="hidden">imam</span>
+                </button>
+                    <!-- Mobile Menu -->
+                    <ul tabindex="0" class="menu text-center  space-y-2 menu-dropdown-toggle dropdown-content mt-3 z-[1] shadow bg-gray-800 rounded-box w-64">
+                        <li class="p-1 rounded-md text-center font-bold">
+                            <a href="/" class="border p-1 text-center rounded-md border-white text-white font-bold">Home</a>
+                        </li>
+                        <li class="p-1 rounded-md font-bold">
+                            <a href="#products" class="border p-1 rounded-md border-white text-white font-bold">Products</a>
+                        </li>
+                        <li class="p-1 rounded-md font-bold">
+                            <a href="#offers" class="border p-1 rounded-md border-white text-white font-bold">Offers</a>
+                        </li>
+                        <li class="p-1 rounded-md font-bold">
+                            <a href="#about" class="border p-1 rounded-md border-white text-white font-bold">About Us</a>
+                        </li>
+                        <li class="p-1 rounded-md font-bold">
+                            <a href="#contact" class="border p-1 rounded-md border-white text-white font-bold">Contact</a>
+                        </li>
+                        <li class="p-1 rounded-md font-bold">
+                            <a href="/signin" class="border p-1   text-white font-bold text-sm hover:bg-gray-600">Sign In</a>
+                        </li>
+                        <li class="p-1 rounded-md font-bold">
+                            <a href="/signup" class="border p-1   text-white font-bold text-sm hover:bg-gray-500">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="/" class="  text-white  font-bold lg:text-3xl md:text-2xl text-xl">
+                Trendify
+            </a>
+            </div>
+            <!-- Navbar Center -->
+            <div class="navbar-center hidden lg:flex items-center">
+                <ul class="menu-horizontal gap-2">
+                    <li class="p-1 rounded-md font-bold">
+                        <a href="/" class=" hover:bg-gray-800 transition-all duration-300 ease-linear  p-1 rounded-md  border-gray-400 border-b-[1px] text-white font-bold">Home</a>
+                    </li>
+                    <li class="p-1 rounded-md font-bold">
+                        <a href="#products" class=" hover:bg-gray-800 transition-all duration-300  p-1 rounded-md  border-gray-400 border-b-[1px] text-white font-semibold">Products</a>
+                    </li>
+                    <li class="p-1 rounded-md font-bold">
+                        <a href="#offers" class=" hover:bg-gray-800 transition-all duration-300    p-1 rounded-md  border-gray-400 border-b-[1px] text-white font-semibold">Offers</a>
+                    </li>
+                    <li class="p-1 rounded-md font-bold">
+                        <a href="#about" class="   hover:bg-gray-800 transition-all duration-300   p-1 rounded-md  border-gray-400 border-b-[1px] text-white font-semibold">About Us</a>
+                    </li>
+                    <li class="p-1 rounded-md font-bold">
+                        <a href="#contact" class=" hover:bg-gray-800 transition-all duration-300  p-1 rounded-md border-gray-400 border-b-[1px] text-white font-semibold">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Navbar End -->
+            <div class="navbar-end gap-2 hidden md:flex">
+                <a href="/signin" class=" px-2 py-1 rounded-md border-b  bg-gray-800 transition-all duration-300 ease-linear text-white font-semibold text-lg hover:bg-gray-700">Sign In</a>
+                <a href="/signup" class="  px-2 py-1 rounded-md border-b bg-gray-800  transition-all duration-300 ease-linear text-white font-semibold text-lg hover:bg-gray-700">Sign Up</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="relative h-[80vh] overflow-hidden">
+
+        <!-- Sliding Banner -->
+        <div id="slider" class="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1000">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute top-10  h-20 w-20 rounded-full  left-10 z-10">
+            <img src="https://i.postimg.cc/TPjn4KmK/80-percentage-off-sale-discount.png" alt="decorative icon" class="animate-pulse">
+        </div>
+        <div class="absolute h-16 w-16 rounded-full bottom-10 right-10 z-10 cursor-pointer" title="Message Us">
+            <img src="https://i.postimg.cc/1XVtbdTv/png-transparent-messenger-facebo-removebg-preview.png" alt="decorative icon" class="animate-bounce w-full h-full rounded-full cursor-pointer">
+        </div>
+
+        <!-- Text Content -->
+        <div class="relative z-20 flex flex-col items-center justify-center h-full text-center text-white">
+            <h1 id="headline" class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Welcome to Trendify</h1>
+            <p id="subheadline" class="text-lg md:text-2xl mb-8 drop-shadow-lg">Your one-stop solution for fashion and trends.</p>
+            <a href="#product" id="ctaButton" class="px-6 py-3 bg-[#082e50] hover:bg-[#091c2c] text-white rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg">Shop Now</a>
+
+            <div class="mt-12 w-4/5 md:w-2/3 lg:w-1/3">
+                <div class="flex">
+                    <input type="text" placeholder="Search for products, brands, and more..." class="border border-white w-3/4 px-4 py-3 rounded-l-full bg-gray-100 text-gray-700 focus:outline-none shadow-md" />
+                    <button class="w-1/4 px-4 py-3 bg-[#082e50] hover:bg-[#091c2c] text-white rounded-r-full text-lg font-semibold transition-all duration-300 shadow-lg">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Categories -->
+    <div class="w-11/12 mx-auto py-5 mt-4">
+        <p class="text-center text-4xl font-bold tracking-normal animate__backInLeft animate__heartBeat">
+            Featured Product Categories
+        </p>
+        <p class="text-lg pt-2 text-center text-gray-500 animate__heartBeat">
+            Explore Our Top Categories.
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-6 w-11/12 mx-auto">
+            <div class="flex flex-col py-2 shadow-md rounded-lg hover:scale-105 transition-all ease-linear duration-300 cursor-pointer">
+                <p class="text-4xl text-center mt-4 mb-3">
+                    <i class="fas fa-tshirt"></i>
+                </p>
+                <span class="text-lg font-semibold text-center block">
+        Clothing
+      </span>
+                <span class="text-gray-500 text-center block">150 Products</span>
+            </div>
+            <div class="flex flex-col py-2 shadow-md rounded-lg hover:scale-105 transition-all ease-linear duration-300 cursor-pointer">
+                <p class="text-4xl text-center mt-4 mb-3">
+                    <i class="fas fa-laptop"></i>
+                </p>
+                <span class="text-lg font-semibold text-center block">
+        Electronics
+      </span>
+                <span class="text-gray-500 text-center block">80 Products</span>
+            </div>
+            <div class="flex flex-col py-2 shadow-md rounded-lg hover:scale-105 transition-all ease-linear duration-300 cursor-pointer">
+                <p class="text-4xl text-center mt-4 mb-3">
+                    <i class="fas fa-couch"></i>
+                </p>
+                <span class="text-lg font-semibold text-center block">
+        Furniture
+      </span>
+                <span class="text-gray-500 text-center block">120 Products</span>
+            </div>
+            <div class="flex flex-col py-2 shadow-md rounded-lg hover:scale-105 transition-all ease-linear duration-300 cursor-pointer">
+                <p class="text-4xl text-center mt-4 mb-3">
+                    <i class="fas fa-shoe-prints"></i>
+                </p>
+                <span class="text-lg font-semibold text-center block">
+        Footwear
+      </span>
+                <span class="text-gray-500 text-center block">90 Products</span>
+            </div>
+            <div class="flex flex-col py-2 shadow-md rounded-lg hover:scale-105 transition-all ease-linear duration-300 cursor-pointer">
+                <p class="text-4xl text-center mt-4 mb-3">
+                    <i class="fas fa-heart"></i>
+                </p>
+                <span class="text-lg font-semibold text-center block">
+        Accessories
+      </span>
+                <span class="text-gray-500 text-center block">60 Products</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Showcase -->
+    <div class="w-ful py-12">
+        <div class="w-11/12 mx-auto px-6 lg:px-8">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Products</h2>
+                <p class="text-gray-600 md:text-lg text-base leading-relaxed">
+                    Explore our top picks, curated just for you.
+                </p>
+            </div>
+
+            <!-- Filter Options -->
+            <div class="flex w-11/12 mx-auto gap-3 lg:gap-0  flex-col lg:flex-row lg:justify-end mb-8">
+                <!-- Category Filter -->
+                <div class="">
+                    <label for="categoryFilter" class="sr-only">Filter by Category</label>
+                    <select id="categoryFilter" name="category" class="bg-white border border-gray-300 rounded-md py-2 px-3 text-gray-700  w-full lg:w-fit mr-4">
+        <option value="">All Categories</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Electronics">Electronics</option>
+        <option value="Accessories">Accessories</option>
+        <option value="Footwear">Footwear</option>
+        <option value="Health & Beauty">Health & Beauty</option>
+                      </select>
+                </div>
+
+                <div class="flex gap-3 lg:gap-0">
+                    <!-- Price Filter -->
+                    <div class="w-full">
+                        <label for="priceFilter" class="sr-only">Filter by Price</label>
+                        <select id="priceFilter" name="price" class="bg-white border border-gray-300 rounded-md py-2 px-3 text-gray-700  w-full lg:w-fit mr-4">
+        <option value="">All Prices</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+                       </select>
+
+                    </div>
+                    <!-- Rating Filter -->
+                    <div class="w-full">
+                        <label for="ratingFilter" class="sr-only">Filter by Rating</label>
+                        <select id="ratingFilter" name="rating" class="bg-white  w-full lg:w-fit border border-gray-300 rounded-md py-2 px-3 text-gray-700">
+        <option value="">All Ratings</option>
+        <option value="4">4 Stars & Up</option>
+        <option value="3">3 Stars & Up</option>
+                    </select>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Product Grid -->
+            <div id="productGrid" class="grid w-11/12 mx-auto grid-cols-1   md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+            </div>
+
+            <!-- Show More/Show Less Buttons -->
+            <div class="text-center mt-8">
+                <button id="showMoreBtn" class="bg-[#0e2e49] text-white px-6 py-2 rounded-md hover:bg-[#113c5f]">Show More</button>
+                <button id="showLessBtn" class="bg-[#0e2e49] text-white px-6 py-2 rounded-md hover:bg-[#113c5f] hidden">Show Less</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Selling Products -->
+    <div id="offers" class="w-11/12 mx-auto     ">
+        <div class=" py-4  body-font    ">
+            <div class="w-11/12       mx-auto">
+                <div class="flex flex-col text-center w-full py-5" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+                    <h1 class="text-xl md:text-4xl font-bold h-one title-font mb-1">
+                        Our Top Selling Products
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-xs md:text-base">
+                        "Unlock incredible savings with our special offers on premium products. Discover deals that will elevate your lifestyle at unbeatable prices."
+                    </p>
+                </div>
+                <div class="flex flex-wrap  ">
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer duration-300 transition-all ease-linear">
+                        <div class="flex relative h-full">
+                            <img src="https://images.unsplash.com/photo-1536659272167-0a78858abb46?q=80&w=600&auto=format&fit=crop" alt="Smart Watch" class="absolute inset-0 w-full h-full object-cover object-center" />
+                            <div class="px-8 py-10 relative z-10 w-full bg-[#1D0642] opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest transition-all ease-linear duration-300 text-sm title-font font-medium text-[#0072B1] mb-1">
+                                    Smart Watch
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-[#0072B1] mb-3">
+                                    Stay Connected on the Go
+                                </h1>
+                                <p class="leading-relaxed text-[#E1AAFF]">
+                                    "Explore the latest in wearable tech with our Smart Watch offers. Stay connected and track your fitness goals with a stylish device that fits your lifestyle."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer duration-300 transition-all ease-linear">
+                        <div class="flex relative h-full">
+                            <img src="https://images.unsplash.com/photo-1612198273689-b437f53152ca?q=80&w=600&auto=format&fit=crop" alt="Smart Phone" class="absolute inset-0 w-full h-full object-cover object-center" />
+                            <div class="px-8 py-10 relative z-10 w-full bg-[#1D0642] opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest transition-all ease-linear duration-300 text-sm title-font font-medium text-[#0072B1] mb-1">
+                                    Smart Phone
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-[#0072B1] mb-3">
+                                    Your Gateway to the World
+                                </h1>
+                                <p class="leading-relaxed text-[#E1AAFF]">
+                                    "Discover the power of communication with our Smart Phone deals. Whether you're capturing memories or staying in touch, find the perfect device for you."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer duration-300 transition-all ease-linear">
+                        <div class="flex relative h-full">
+                            <img src="https://plus.unsplash.com/premium_photo-1684445035187-c4bc7c96bc5d?q=80&w=600&auto=format&fit=crop" alt="Sleeping Bed" class="absolute inset-0 w-full h-full object-cover object-center" />
+                            <div class="px-8 py-10 relative z-10 w-full bg-[#1D0642] opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-[#007BFF] mb-1">
+                                    Sleeping Bed
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-[#007BFF] mb-3">
+                                    Comfort Redefined
+                                </h1>
+                                <p class="leading-relaxed text-[#E1AAFF]">
+                                    "Experience the ultimate in comfort with our premium Sleeping Bed offers. Invest in your rest and wake up refreshed every day."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer duration-300 transition-all ease-linear">
+                        <div class="flex relative h-full">
+                            <img src="https://images.unsplash.com/photo-1659500700592-824d027c9ba0?q=80&w=600&auto=format&fit=crop" alt="Showpiece" class="absolute inset-0 w-full h-full object-cover object-center" />
+                            <div class="px-8 py-10 relative z-10 w-full bg-[#1D0642] opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-[#007BFF] mb-1">
+                                    Showpiece
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-[#007BFF] mb-3">
+                                    Elegance in Every Detail
+                                </h1>
+                                <p class="leading-relaxed text-[#E1AAFF]">
+                                    "Adorn your home with our exquisite Showpieces. Add a touch of elegance to any room and make a statement with your decor."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer duration-300 transition-all ease-linear">
+                        <div class="flex relative h-full">
+                            <img src="https://images.unsplash.com/photo-1588344093894-84efcf2720f3?q=80&w=600&auto=format&fit=crop" alt="Al-Quran" class="absolute inset-0 w-full h-full object-cover object-center" />
+                            <div class="px-8 py-10 relative z-10 w-full bg-[#1D0642] opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-[#007BFF] mb-1">
+                                    Al-Quran
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-[#007BFF] mb-3">
+                                    A Spiritual Journey
+                                </h1>
+                                <p class="leading-relaxed text-[#E1AAFF]">
+                                    "Embark on a spiritual journey with our beautifully crafted Al-Qurans. Perfect for personal study or as a thoughtful gift."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4 cursor-pointer duration-300 transition-all ease-linear">
+                        <div class="flex relative h-full">
+                            <img src="https://images.unsplash.com/photo-1601937286283-1c4550e05f58?q=80&w=600&auto=format&fit=crop" alt="Water Bottle" class="absolute inset-0 w-full h-full object-cover object-center" />
+                            <div class="px-8 py-10 relative z-10 w-full bg-[#1D0642] opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-[#007BFF] mb-1">
+                                    Water Bottle
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-[#007BFF] mb-3">
+                                    Hydration on the Go
+                                </h1>
+                                <p class="leading-relaxed text-[#E1AAFF]">
+                                    "Stay hydrated wherever you are with our durable and stylish Water Bottles. Ideal for active lifestyles and everyday use."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="w-full   py-6 ">
+        <div class=" w-11/12 md:max-w-6xl mx-auto px-6 lg:px-8">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+                <p class="text-gray-600 md:text-lg text-base leading-relaxed">
+                    Connecting you with the best of Bangladeshi craftsmanship for a more meaningful shopping experience. Explore a curated selection of high-quality products made with care and precision.
+                </p>
+            </div>
+
+            <!-- Who We Are Section -->
+            <div class="lg:flex lg:justify-between lg:space-x-12 mb-6">
+                <div class="lg:w-1/2   md:p-8 rounded-lg  ">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Who We Are</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Established in 2014, our journey began from a small workshop in Dhaka. We partnered with local artisans and craftsmen across Bangladesh to bring you products that embody our rich cultural heritage and exceptional craftsmanship. (read more on
+                        <a href="/our-artisans" class="text-blue-600 hover:underline">Our Artisans</a>)
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        From hand-woven textiles to intricately crafted accessories, each product is made with the highest standards of quality and attention to detail. We source the finest materials locally, ensuring they are sustainable and ethically produced. (read more on
+                        <a href="/our-materials" class="text-blue-600 hover:underline">Our Materials</a>)
+                    </p>
+                </div>
+
+                <!-- Optional Image -->
+                <div class="lg:w-1/2 md:p-8 mt-8 lg:mt-0  cursor-pointer duration-300 transition-all ease-linear">
+                    <img src="./Images/About-Us.png" alt="Bangladeshi Artisans" class="w-full h-full object-cover rounded-lg shadow-lg hover:scale-105 transition-all duration-300" loading="lazy" />
+                </div>
+            </div>
+
+            <!-- How We Work Section -->
+            <div class="  md:px-8 py-4 rounded-lg   ">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">How We Work</h3>
+                <p class="text-gray-600 leading-relaxed  ">
+                    We use a direct-to-artisan distribution model focusing on made-to-order and custom services. This approach helps us cater precisely to your needs while minimizing waste and ensuring fair pricing. We believe that meaningful shopping should be accessible
+                    and affordable. (read more on <a href="/our-approach" class="text-blue-600 hover:underline">Our Approach and Ethical Quality</a>)
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Browse our core collection of timeless designs that reflect our passion for quality. Our collection is available on demand, and anything out of stock can be custom made for you within 3-6 weeks. (read more on <a href="/made-to-order"
+                        class="text-blue-600 hover:underline">Made to Order</a>)
+                </p>
+            </div>
+
+            <!-- Custom Offer Section -->
+            <div class="  md:p-8 rounded-lg  ">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Custom Offer</h3>
+                <p class="text-gray-600 leading-relaxed ">
+                    If you have specific requirements or can't find exactly what you're looking for, our custom services are designed for you. With our Custom Made and Made to Measure options, you can personalize our products to fit your exact specifications. Visit us in
+                    our Dhaka store for a full experience, or book an online consultation to start your custom project. (read more on <a href="/custom-made" class="text-blue-600 hover:underline">Custom Made</a>) (read more on <a href="/made-to-measure"
+                        class="text-blue-600 hover:underline">Made to Measure</a>)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Award Section -->
+    <div class="bg-[#112a4a]  pb-4  ">
+        <div class="w-11/12 mx-auto ">
+            <div class="flex flex-col justify-center items-center">
+                <p class="  font-semibold text-white text-3xl mt-8 mb-2">
+                    Our Achievements
+                </p>
+                <h1 class="    text-gray-400 text-sm max-w-screen-lg mx-auto px-4 tracking-wide text-center">
+                    Serving Over 1,24,000+ Satisfied Customers Who Still Trust Our Services
+                </h1>
+            </div>
+        </div>
+
+        <div class="  mt-8 grid grid-cols-2 lg:grid-cols-4 gap-2 w-11/12 md:w-[85%] mx-auto">
+            <div class="flex flex-col bg-[#1e4475] py-2 shadow-2xl">
+                <p class="text-white text-4xl md:text-5xl flex justify-center items-center">
+                    <i class="fas fa-trophy"></i>
+                    <!-- Font Awesome Trophy Icon -->
+                </p>
+                <br />
+                <h1 class="text-white text-3xl md:text-4xl font-bold text-center">
+                    32M
+                </h1>
+                <p class=" text-gray-100 mx-auto text-center w-[90%]">
+                    Excellence in Service Award
+                </p>
+            </div>
+
+            <div class="bg-[#1e4475] flex flex-col py-2 shadow-2xl">
+                <p class="text-white text-4xl md:text-5xl flex justify-center items-center">
+                    <i class="fas fa-briefcase"></i>
+                    <!-- Font Awesome Briefcase Icon -->
+                </p>
+                <br />
+                <h1 class="text-white text-3xl md:text-4xl font-bold text-center">
+                    43M
+                </h1>
+                <p class=" text-gray-100 mx-auto text-center w-[90%]">
+                    Top Industry Innovator
+                </p>
+            </div>
+
+            <div class="bg-[#1e4475] flex flex-col py-2 shadow-2xl">
+                <p class="text-white text-4xl md:text-5xl flex justify-center items-center">
+                    <i class="fas fa-lightbulb"></i>
+                    <!-- Font Awesome Lightbulb Icon -->
+                </p>
+                <br />
+                <h1 class="text-white text-3xl md:text-4xl font-bold text-center">
+                    51M
+                </h1>
+                <p class=" text-gray-100 mx-auto text-center w-[90%]">
+                    Innovation Excellence Award
+                </p>
+            </div>
+
+            <div class="bg-[#1e4475] flex flex-col py-2 shadow-2xl">
+                <p class="text-white text-4xl md:text-5xl flex justify-center items-center">
+                    <i class="fas fa-heart"></i>
+                    <!-- Font Awesome Heart Icon -->
+                </p>
+                <br />
+                <h1 class="text-white text-3xl md:text-4xl font-bold text-center">
+                    42M
+                </h1>
+                <p class=" text-gray-100 mx-auto text-center w-[90%]">
+                    Best Customer Choice Award
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Team -->
+    <div class="w-11/12  mx-auto py-5 ">
+        <p class="flex flex-col justify-center items-center md:text-2xl text-lg lg:text-4xl font-bold mt-11 mb-2">
+            Our Team
+        </p>
+
+        <p class="text-gray-500 text-center md:text-sm text-sm w-11/12 mx-auto">
+            Meet the talented individuals behind our success.
+        </p>
+        </p>
+
+        <div class="lg:w-[80%] w-11/12 grid grid-cols-2 lg:grid-cols-3 gap-4 m-auto my-6">
+            <!-- Product 1 -->
+            <div class="relative overflow-hidden rounded-xl h-[300px] group">
+                <img class="w-full grayscale h-full object-cover cursor-pointer rounded-xl transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Lara Craft" width="600" height="300" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-xl font-bold">Jhon Milton <br> <small>CEO</small> </span>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="relative overflow-hidden rounded-lg h-[300px] group">
+                <img class="w-full grayscale h-full object-cover cursor-pointer rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Smart Phone" width="600" height="300" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-xl font-bold">Lara Croft <br> <small>Managing Director</small> </span>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="relative overflow-hidden rounded-lg h-[300px] group">
+                <img class="w-full grayscale h-full object-cover cursor-pointer rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Sleeping Bed" width="600" height="300" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-xl font-bold">K.S. Sumon <br> <small>HR</small> </span>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="relative overflow-hidden rounded-lg h-[300px] group">
+                <img class="w-full grayscale h-full object-cover cursor-pointer rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Showpiece" width="600" height="300" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-xl font-bold">Aatik Tasneem <br> <small>
+                            Marketing Manager
+                    </small></span>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="relative overflow-hidden rounded-lg h-[300px] group">
+                <img class="w-full grayscale h-full object-cover cursor-pointer rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1672825464495-f08d8efb81ad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Al-Quran" width="600" height="300" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-xl font-bold">
+                        Kazi Mizan <br> <small>
+                            Sales Manager
+                        </small>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="relative overflow-hidden rounded-lg h-[300px] group">
+                <img class="w-full grayscale h-full object-cover cursor-pointer rounded-lg transition-all duration-300 group-hover:scale-105 group-hover:grayscale-0" src="https://images.unsplash.com/photo-1672825523661-80df832c6a1d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Water Bottle" width="600" height="300" loading="lazy" />
+                <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-white text-xl font-bold">Ivana Cajina <br>
+                    <small>
+                        Customer Support
+                    </small></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <div class="flex flex-col items-center justify-center w-[85vw] md:w-[700px]   mb-8 bg-white  rounded-md transition-all   mx-auto duration-700 mt-10 p-10">
+        <h2 class="text-3xl font-extrabold text-center mb-8">What Our Customers Say</h2>
+        <div id="reviewCard" class="flex flex-col border w-full h-full items-center justify-center">
+        </div>
+        <div class="flex mt-6 gap-3 text-3xl mx-auto font-bold">
+            <button id="prevReview" class="cursor-pointer w-fit text-[#041728] hover:text-[#041728] mt-5">
+        <!-- Left Arrow Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 19l-7-7 7-7" />
+        </svg> <div class="hidden">imam</div>
+    </button>
+            <button id="nextReview" class="cursor-pointer w-fit text-[#041728] hover:text-[#041728] mt-5">
+        <!-- Right Arrow Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5l7 7-7 7" />
+        </svg><div class="hidden">imam</div>
+    </button>
+        </div>
+
+
+    </div>
+
+    <!-- Contact Us Section -->
+    <div id="contact">
+        <div class="text-center">
+            <h1 class="text-3xl md:text-5xl font-bold">Subscribe to Trendify</h1>
+            <div class="container mx-auto py-5">
+                <div class="bg-gradient-to-r from-[#143086] to-[#041728] lg:rounded-s-full mb-6">
+                    <div class="px-6 py-12 text-center md:px-12 lg:text-left">
+                        <div class="container mx-auto xl:px-32">
+                            <div class="grid items-center gap-12 lg:grid-cols-2">
+                                <div class="mt-12 lg:mt-0">
+                                    <h1 class="mb-12 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl text-white">
+                                        Do not miss <br />
+                                        <span class="text-[hsl(218,81%,75%)]">any updates</span>
+                                    </h1>
+                                    <p class="lead mb-4 opacity-70 text-white">
+                                        We have high-quality products.
+                                    </p>
+                                </div>
+                                <div class="mb-12 lg:mb-0">
+                                    <div class="relative">
+                                        <h2 class="mb-12 text-center text-white text-3xl font-bold">
+                                            Subscribe to Trendify
+                                        </h2>
+                                        <form>
+                                            <div class="relative mb-6">
+                                                <label for="nameInput" class="sr-only">Name</label>
+                                                <input type="text" id="nameInput" placeholder="Name" class="input outline-none bg-transparent text-white font-extrabold input-primary w-full" />
+
+                                                <label for="emailInput" class="sr-only">Email</label>
+                                                <input type="email" id="emailInput" placeholder="Email" class="input mt-3 outline-none bg-transparent text-white font-extrabold input-primary w-full" required />
+                                            </div>
+                                            <div class="flex items-center gap-2 py-3">
+                                                <input class="cursor-pointer" required type="checkbox" value="" id="exampleCheck96" />
+                                                <label for="exampleCheck96" class="text-white cursor-pointer">
+                                                I have read and agree to the terms
+                                            </label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-full h-12 font-bold text-lg rounded-lg">
+                                            Subscribe
+                                        </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-100 pt-8  border">
+        <div class="mx-auto w-11/12         space-y-8   py-5   lg:space-y-16 ">
+            <div class="sm:flex w-11/12      mx-auto sm:items-center sm:justify-between">
+                <div class="    ">
+                    <a to="/">
+                        <h2 class="font-blach sm:text-xl md:text-3xl text-sm text-left hover:bg-transparent   text-brand-blue tracking-tighter w-full font-oswald font-bold flex items-center justify-start">
+
+                            <span>Trendify</span>
+                        </h2>
+                    </a>
+                </div>
+
+                <ul class="mt-8 flex justify-start gap-6 sm:mt-0     sm:justify-end">
+                    <li>
+                        <a target="_blank" class="text-brand-blue duration-300 hover:text-black font-heading">
+                            <span class="sr-only">Facebook</span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fillRule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" class="text-brand-blue duration-300 hover:text-black font-heading">
+                            <span class="sr-only">Instagram</span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fillRule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                            <span class="sr-only">Twitter</span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a target="_blank" class="text-brand-blue duration-300 hover:text-black font-heading">
+                            <span class="sr-only">GitHub</span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fillRule="evenodd"
+                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                            <span class="sr-only">Dribbble</span>
+
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    fillRule="evenodd"
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="grid w-11/12 mx-auto  gap-8 border-t-2 border-brand-blue pt-8 grid-cols-2 lg:grid-cols-4   font-oswald">
+                <div class="     ">
+                    <p class="font-bold uppercase font-oswald text-brand-blue">
+                        Services
+                    </p>
+
+                    <ul class="mt-6 space-y-4 text-sm">
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  1on1 Coaching
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Company Review
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Accounts Review
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  HR Consulting
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  SEO Optimisation
+                </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="  ">
+                    <p class="font-bold uppercase font-oswald text-brand-blue">
+                        Company
+                    </p>
+
+                    <ul class="mt-6 space-y-4 text-sm">
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  About
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Meet the Team
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Accounts Review
+                </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="   ">
+                    <p class="font-bold uppercase font-oswald text-brand-blue">
+                        Helpful as
+                    </p>
+
+                    <ul class="mt-6 space-y-4 text-sm">
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Contact
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  FAQs
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Live Chat
+                </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class=" ">
+                    <p class="font-bold uppercase font-oswald text-brand-blue">
+                        Legal
+                    </p>
+
+                    <ul class="mt-6 space-y-4 text-sm">
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Accessibility
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Returns Policy
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Refund Policy
+                </a>
+                        </li>
+
+                        <li>
+                            <a class="text-brand-blue duration-300 hover:text-black font-heading">
+                  Hiring Statistics
+                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-xs  w-11/12 mx-auto   text-brand-blue font-heading">
+                &copy; 2024. Trendify. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
